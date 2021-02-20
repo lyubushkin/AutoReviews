@@ -42,6 +42,16 @@ extension Auto {
         DataManager.shared.modifications
     }
     
+    static func addModification(_ curentModification: String) {
+        
+        for modification in DataManager.shared.modifications {
+            if modification == curentModification {
+                return
+            }
+        }
+
+        DataManager.shared.modifications.append(curentModification)
+    }
 
 }
 

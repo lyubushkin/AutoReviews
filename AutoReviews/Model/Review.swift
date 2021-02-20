@@ -14,6 +14,8 @@ struct Review {
 extension Review {
     
     static func addReview(modification: String, title: String, content: String) {
+        Auto.addModification(modification)
+        
         DataManager.shared.reviews.append(Review(modification: modification,
                                                  title: title,
                                                  content: content))
