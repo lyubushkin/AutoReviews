@@ -11,9 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+        
+        let dataManager = DataManager.shared
+        
+        let rewies = Review.getReviews(by: "BMW X5 2015")
+        
+        print("\(rewies[0].content)")
 }
 
+}
