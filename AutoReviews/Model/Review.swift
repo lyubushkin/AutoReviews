@@ -15,11 +15,9 @@ extension Review {
     
     static func addReview(modification: String, title: String, content: String) {
         Auto.addModification(modification)
-        
         DataManager.shared.reviews.append(Review(modification: modification,
                                                  title: title,
-                                                 content: content))
-    }
+                                                 content: content)) }
     
     static func getReviews(by modification: String) -> [Review] {
         var reviews: [Review] = []
@@ -32,4 +30,6 @@ extension Review {
         
         return reviews
     }
+    
+    static func getReviews() -> [Review] { DataManager.shared.reviews }
 }
