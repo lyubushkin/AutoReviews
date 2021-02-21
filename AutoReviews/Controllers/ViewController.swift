@@ -11,16 +11,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // tests
+        let reviewsBMWX5 = Review.getReviews(by: "BMW X5 2021")
+        print("Старт: отзывов по BMW X5 2021 - \(reviewsBMWX5.count)")
         
-        //let dataManager = DataManager.shared
+        let modification = Auto.getModification()
+        print("Старт: модификаций всего - \(modification.count)")
+        print("Старт: Количество отзывов всего: \(Review.getReviews().count)")
         
-        let rewies = Review.getReviews(by: "BMW X5 2015")
+        print("Добавляем отзыв по BMW X5 2021...")
+        Review.addReview(modification: "BMW X5 2021",
+                         title: "Практический Мерседес",
+                         content: "Отделка торпеды мягкая, не скрипит")
         
-        Review.addReview(modification: "BMW X5 2021", title: "Практический Камри", content: "Отделка торпеды мягкая, не скрипит")
-        
-        
-        
-        print("\(rewies[0].content)")
+        print("Конец: отзывов по BMW X5 2021 - \(Review.getReviews(by: "BMW X5 2021").count)")
+        print("Конец: модификаций всего - \(Auto.getModification().count)")
+        print("Конец: Количество отзывов всего: \(Review.getReviews().count)")
 }
 
 }
