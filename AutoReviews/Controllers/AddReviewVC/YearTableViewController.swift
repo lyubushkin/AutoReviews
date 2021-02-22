@@ -14,7 +14,7 @@ class YearTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "\(modification)"
     }
 
     // MARK: - Table view data source

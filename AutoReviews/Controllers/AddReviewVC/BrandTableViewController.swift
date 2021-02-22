@@ -13,7 +13,7 @@ class BrandTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
     // MARK: - Table view data source
@@ -25,9 +25,14 @@ class BrandTableViewController: UITableViewController {
 
         var content = cell.defaultContentConfiguration()
         content.text = brands[indexPath.row]
+        content.image = UIImage(named: "\(content.text?.lowercased() ?? "")")
         cell.contentConfiguration = content
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        47
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

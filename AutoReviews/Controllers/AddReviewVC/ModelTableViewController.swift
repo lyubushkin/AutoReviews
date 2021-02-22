@@ -14,7 +14,7 @@ class ModelTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "\(brand)"
     }
 
     // MARK: - Table view data source
