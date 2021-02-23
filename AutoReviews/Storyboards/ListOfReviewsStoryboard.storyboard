@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3dE-Pc-MvG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -42,7 +42,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="bnB-5I-HdL" kind="presentation" trigger="accessoryAction" modalPresentationStyle="fullScreen" id="GV9-Zn-G41"/>
+                                    <segue destination="bnB-5I-HdL" kind="show" id="7pT-9v-k9E"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,11 +61,11 @@
             <objects>
                 <viewController id="bnB-5I-HdL" customClass="ReviewInfoViewController" customModule="AutoReviews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vb6-Zr-7d8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Dsf-gF-P6C">
-                                <rect key="frame" x="16" y="185" width="109.5" height="70"/>
+                                <rect key="frame" x="16" y="141" width="109.5" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modification:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rDU-ON-80a">
                                         <rect key="frame" x="0.0" y="0.0" width="109.5" height="23"/>
@@ -85,7 +85,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2H-da-LfK">
-                                <rect key="frame" x="80" y="818" width="254" height="33"/>
+                                <rect key="frame" x="80" y="764" width="254" height="33"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Back to Reviews">
@@ -96,7 +96,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UeB-lS-MVf">
-                                <rect key="frame" x="141.5" y="185" width="256.5" height="70"/>
+                                <rect key="frame" x="141.5" y="141" width="256.5" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpf-QZ-uAq">
                                         <rect key="frame" x="210.5" y="0.0" width="46" height="23"/>
@@ -113,7 +113,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="FxI-g3-n8C">
-                                <rect key="frame" x="16" y="315" width="382" height="65"/>
+                                <rect key="frame" x="16" y="271" width="382" height="65"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brd-8V-hA6">
                                         <rect key="frame" x="0.0" y="0.0" width="73" height="23"/>
@@ -146,6 +146,7 @@
                             <constraint firstItem="J2H-da-LfK" firstAttribute="leading" secondItem="XCT-zG-Viz" secondAttribute="leading" constant="80" id="jO3-hm-t0z"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WEs-7L-4kU"/>
                     <connections>
                         <outlet property="contentLabel" destination="vc1-Ff-gln" id="JKB-3L-zSV"/>
                         <outlet property="modificationLabel" destination="zpf-QZ-uAq" id="ia9-RB-VHZ"/>
