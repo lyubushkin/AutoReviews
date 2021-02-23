@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="106" y="86"/>
         </scene>
-        <!--View Controller-->
+        <!--Review Info View Controller-->
         <scene sceneID="pi4-Qd-4b7">
             <objects>
-                <viewController id="bnB-5I-HdL" sceneMemberID="viewController">
+                <viewController id="bnB-5I-HdL" customClass="ReviewInfoViewController" customModule="AutoReviews" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vb6-Zr-7d8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +91,9 @@
                                 <state key="normal" title="Back to Reviews">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="backToReviewsButtonPressed" destination="bnB-5I-HdL" eventType="touchUpInside" id="bvI-gh-4yc"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UeB-lS-MVf">
                                 <rect key="frame" x="141.5" y="185" width="256.5" height="70"/>
@@ -143,6 +146,11 @@
                             <constraint firstItem="J2H-da-LfK" firstAttribute="leading" secondItem="XCT-zG-Viz" secondAttribute="leading" constant="80" id="jO3-hm-t0z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="vc1-Ff-gln" id="JKB-3L-zSV"/>
+                        <outlet property="modificationLabel" destination="zpf-QZ-uAq" id="ia9-RB-VHZ"/>
+                        <outlet property="titleLabel" destination="1QP-Zc-dkE" id="6ii-rV-xNp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S8l-Pp-pPA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

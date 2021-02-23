@@ -9,9 +9,9 @@ import UIKit
 
 class ReviewInfoViewController: UIViewController {
     
-    
+
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var modificationLabel: UILabel!
-    @IBOutlet var tittleLabel: UILabel!
     @IBOutlet var contentLabel: UILabel!
     
     var review: Review!
@@ -20,7 +20,7 @@ class ReviewInfoViewController: UIViewController {
         super.viewDidLoad()
 
         modificationLabel.text = review.modification
-        tittleLabel.text = review.title
+        titleLabel.text = review.title
         contentLabel.text = review.content
     }
     
