@@ -9,6 +9,7 @@ import UIKit
 
 class ReviewInfoViewController: UIViewController {
     
+    
     @IBOutlet var modificationLabel: UILabel!
     @IBOutlet var tittleLabel: UILabel!
     @IBOutlet var contentLabel: UILabel!
