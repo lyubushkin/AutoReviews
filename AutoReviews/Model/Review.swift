@@ -32,4 +32,15 @@ extension Review {
     }
     
     static func getReviews() -> [Review] { DataManager.shared.reviews }
+    
+    static func deleteReview(with modification: String) {
+        var index = 0
+        for review in DataManager.shared.reviews {
+            if review.modification == modification {
+                DataManager.shared.reviews.remove(at: index)
+                break
+            }
+            index += 1
+        }
+    }
 }

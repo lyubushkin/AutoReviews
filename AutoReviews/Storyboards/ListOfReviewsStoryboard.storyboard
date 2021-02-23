@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List Of Reviews Table View Controller-->
+        <!--Reviews-->
         <scene sceneID="GYG-zt-z12">
             <objects>
                 <tableViewController storyboardIdentifier="ListOfReviewsTableViewController" id="3dE-Pc-MvG" customClass="ListOfReviewsTableViewController" customModule="AutoReviews" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,6 +51,8 @@
                             <outlet property="delegate" destination="3dE-Pc-MvG" id="z6N-TC-mGK"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Reviews" image="star" catalog="system" id="yzW-Hj-gfB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEW-87-D2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,6 +161,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="star" catalog="system" width="128" height="116"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -8,23 +8,18 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-    
-    let brands = Auto.getBrands()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewControllers()
         title = "Brand"
     }
 }
-
 extension TabBarViewController {
     private func setupViewControllers() {
         guard let pickBrandVC = viewControllers?.first as? BrandTableViewController else { return }
-        pickBrandVC.brands = brands
+        pickBrandVC.brands = Auto.getBrands()
         
         guard let listOfReviewsTableVC = viewControllers?.last as? ListOfReviewsTableViewController else { return }
-        
         listOfReviewsTableVC.reviews = Review.getReviews()
     }
 }
