@@ -61,13 +61,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		33848B5925E42878008FF07D /* ReviewsVC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ReviewsVC;
-			sourceTree = "<group>";
-		};
 		3397E94525E0585A0062FA0D = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +125,6 @@
 				33B8099C25E2B82A00117521 /* StartScreenViewController.swift */,
 				3397E95525E0585A0062FA0D /* TabBarViewController.swift */,
 				33B809A025E2FD3200117521 /* AddReviewVC */,
-				33848B5925E42878008FF07D /* ReviewsVC */,
 				FF80319E25E5616A00888346 /* ListOfReviewsTableViewController.swift */,
 				FF8031A125E5619C00888346 /* ReviewInfoViewController.swift */,
 			);
