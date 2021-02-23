@@ -12,6 +12,12 @@ class ListOfReviewsTableViewController: UITableViewController {
     // MARK: - Private Properties
     
     var reviews: [Review] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("прилетело отзывов \(reviews.count)")
+        print("первый отзывов \(reviews[0].content)")
+    }
 
     // MARK: - Table view data source
     

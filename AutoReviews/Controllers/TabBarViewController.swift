@@ -22,5 +22,9 @@ extension TabBarViewController {
     private func setupViewControllers() {
         guard let pickBrandVC = viewControllers?.first as? BrandTableViewController else { return }
         pickBrandVC.brands = brands
+        
+        guard let listOfReviewsTableVC = viewControllers?.last as? ListOfReviewsTableViewController else { return }
+        
+        listOfReviewsTableVC.reviews = Review.getReviews()
     }
 }
