@@ -22,6 +22,9 @@
 		33B809A225E2FD7500117521 /* ModelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B809A125E2FD7500117521 /* ModelTableViewController.swift */; };
 		33B809A525E301F100117521 /* YearTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B809A425E301F100117521 /* YearTableViewController.swift */; };
 		33B809A925E306A700117521 /* AddReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B809A825E306A700117521 /* AddReviewViewController.swift */; };
+		FF80319F25E5616A00888346 /* ListOfReviewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF80319E25E5616A00888346 /* ListOfReviewsTableViewController.swift */; };
+		FF8031A225E5619C00888346 /* ReviewInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8031A125E5619C00888346 /* ReviewInfoViewController.swift */; };
+		FF8031A525E561CA00888346 /* ListOfReviewsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8031A425E561CA00888346 /* ListOfReviewsStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		33B809A125E2FD7500117521 /* ModelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTableViewController.swift; sourceTree = "<group>"; };
 		33B809A425E301F100117521 /* YearTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearTableViewController.swift; sourceTree = "<group>"; };
 		33B809A825E306A700117521 /* AddReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewViewController.swift; sourceTree = "<group>"; };
+		FF80319E25E5616A00888346 /* ListOfReviewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfReviewsTableViewController.swift; sourceTree = "<group>"; };
+		FF8031A125E5619C00888346 /* ReviewInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewInfoViewController.swift; sourceTree = "<group>"; };
+		FF8031A425E561CA00888346 /* ListOfReviewsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListOfReviewsStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 			children = (
 				3397E95725E0585A0062FA0D /* Main.storyboard */,
 				3397E95C25E0585D0062FA0D /* LaunchScreen.storyboard */,
+				FF8031A425E561CA00888346 /* ListOfReviewsStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -126,6 +133,8 @@
 				3397E95525E0585A0062FA0D /* TabBarViewController.swift */,
 				33B809A025E2FD3200117521 /* AddReviewVC */,
 				33848B5925E42878008FF07D /* ReviewsVC */,
+				FF80319E25E5616A00888346 /* ListOfReviewsTableViewController.swift */,
+				FF8031A125E5619C00888346 /* ReviewInfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +227,7 @@
 				3397E96725E05BBB0062FA0D /* .gitignore in Resources */,
 				3397E95E25E0585D0062FA0D /* LaunchScreen.storyboard in Resources */,
 				3397E95B25E0585D0062FA0D /* Assets.xcassets in Resources */,
+				FF8031A525E561CA00888346 /* ListOfReviewsStoryboard.storyboard in Resources */,
 				3397E95925E0585A0062FA0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,8 +241,10 @@
 			files = (
 				3397E97725E05E0D0062FA0D /* Auto.swift in Sources */,
 				33B809A225E2FD7500117521 /* ModelTableViewController.swift in Sources */,
+				FF80319F25E5616A00888346 /* ListOfReviewsTableViewController.swift in Sources */,
 				33B809A925E306A700117521 /* AddReviewViewController.swift in Sources */,
 				3397E95625E0585A0062FA0D /* TabBarViewController.swift in Sources */,
+				FF8031A225E5619C00888346 /* ReviewInfoViewController.swift in Sources */,
 				33B8099A25E2AF5100117521 /* BrandTableViewController.swift in Sources */,
 				3397E97425E05DFF0062FA0D /* DataManager.swift in Sources */,
 				3397E95225E0585A0062FA0D /* AppDelegate.swift in Sources */,
